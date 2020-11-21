@@ -13,7 +13,7 @@ const My404Component = () => {
     return (
         <div>
             No match
-            <LocationDisplay />
+            {/* <LocationDisplay /> */}
         </div>
     );
 };

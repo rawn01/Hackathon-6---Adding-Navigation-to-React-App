@@ -13,7 +13,7 @@ const About = () => {
     return (
         <div>
             You are on the about page.
-            <LocationDisplay />
+            {/* <LocationDisplay /> */}
         </div>
     );
 };

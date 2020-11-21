@@ -10,8 +10,6 @@ import LocationDisplay from "./LocationDisplay";
 
 
 class App extends Component {
-    componentDidMount() {
-    }
 
     render() {
         return(
@@ -24,7 +22,10 @@ class App extends Component {
                     <Route path="/about" component={About} />
                     <Route component={My404Component}/>
                 </Switch>
+
+                <LocationDisplay />
             </div>
+            
         );
     }
 

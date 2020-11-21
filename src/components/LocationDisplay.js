@@ -7,7 +7,7 @@ const LocationDisplay = () => {
 
     useEffect(() => {
         setLoc(location.pathname);
-    }, []);
+    });
 
     return (
         <div data-testid="location-display">
