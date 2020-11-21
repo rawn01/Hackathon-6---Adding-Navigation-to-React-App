@@ -13,19 +13,21 @@ class App extends Component {
 
     render() {
         return(
-            <div id="main">
-                <Link to="/">Home</Link>
-                <Link to="/about">About</Link>
+                <div id="main">
+                    <Link to="/">Home</Link>
+                    <Link to="/about">About</Link>
+                    <BrowserRouter>
 
-                <Switch>
-                    <Route exact path="/" component={Home} />
-                    <Route path="/about" component={About} />
-                    <Route component={My404Component}/>
-                </Switch>
+                        <Switch>
+                            <Route exact path="/" component={Home} />
+                            <Route path="/about" component={About} />
+                            <Route component={My404Component}/>
+                        </Switch>
+                    </BrowserRouter>
 
-                <LocationDisplay />
-            </div>
-            
+
+                    <LocationDisplay />
+                </div>
         );
     }
 
