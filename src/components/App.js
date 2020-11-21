@@ -16,8 +16,8 @@ class App extends Component {
     render() {
         return(
             <div id="main">
-                <a><Link to="/">Home</Link></a>
-                <a><Link to="/about">About</Link></a>
+                <Link to="/">Home</Link>
+                <Link to="/about">About</Link>
 
                 <Switch>
                     <Route exact path="/" component={Home} />
