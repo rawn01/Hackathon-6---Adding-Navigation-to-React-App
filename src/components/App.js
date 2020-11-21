@@ -6,6 +6,9 @@ import Home from './Home';
 import About from './About';
 import My404Component from "./My404Component";
 
+import LocationDisplay from "./LocationDisplay";
+
+
 class App extends Component {
     componentDidMount() {
     }
@@ -13,11 +16,10 @@ class App extends Component {
     render() {
         return(
             <div id="main">
+                <a><Link to="/">Home</Link></a>
+                <a><Link to="/about">About</Link></a>
 
-                <Link to="/">Home</Link>
-                <Link to="/about">About</Link>
                 <Switch>
-
                     <Route exact path="/" component={Home} />
                     <Route path="/about" component={About} />
                     <Route component={My404Component}/>
