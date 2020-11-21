@@ -1,5 +1,5 @@
 import React, {Component, useState} from "react";
-import {BrowserRouter, Link, Switch, Route} from 'react-router-dom';
+import {BrowserRouter, Link, Switch, Route, useLocation} from 'react-router-dom';
 import '../styles/App.css';
 
 import Home from './Home';
@@ -7,6 +7,9 @@ import About from './About';
 import My404Component from "./My404Component";
 
 class App extends Component {
+    componentDidMount() {
+    }
+
     render() {
         return(
             <div id="main">
