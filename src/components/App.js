@@ -13,22 +13,22 @@ class App extends Component {
 
     render() {
         return(
-            <BrowserRouter>
-
-                <div id="main">
+            <div id="main">
+                <BrowserRouter>
                     <Link to="/">Home</Link>
                     <Link to="/about">About</Link>
-
+                    
                         <Switch>
                             <Route exact path="/" component={Home} />
                             <Route path="/about" component={About} />
                             <Route component={My404Component}/>
                         </Switch>
 
-
+                    
                     <LocationDisplay />
-                </div>
-            </BrowserRouter>
+                </BrowserRouter>
+
+            </div>
 
         );
     }
